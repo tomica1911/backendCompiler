@@ -14,26 +14,26 @@ USER gitpod
 ###########################
 # Docker SETUP
 ###########################
-RUN apt-get update
-RUN apt-get install -y docker.io
+RUN sudo apt-get update
+RUN sudo apt-get install -y docker.io
 
-RUN echo "Docker Setup complete"
+RUN sudo echo "Docker Setup complete"
 
 ###########################
 # NodeJS setup
 ###########################
-RUN apt-get update
-RUN apt-get install -y nodejs
-RUN apt-get install -y npm
-RUN echo "NodeJS setup Complete"
+RUN sudo apt-get update
+RUN sudo apt-get install -y nodejs
+RUN sudo apt-get install -y npm
+RUN sudo echo "NodeJS setup Complete"
 
 ###########################
 # Start Docker
 ###########################
-RUN chmod 777 ./API/DockerTimeout.sh
-RUN chmod 777 ./API/Payload/script.sh
-RUN chmod 777 ./API/Payload/javaRunner.sh
-RUN chmod 777 ./Setup/UpdateDocker.sh
+RUN sudo chmod 777 ./API/DockerTimeout.sh
+RUN sudo chmod 777 ./API/Payload/script.sh
+RUN sudo chmod 777 ./API/Payload/javaRunner.sh
+RUN sudo chmod 777 ./Setup/UpdateDocker.sh
 
-RUN systemctl restart docker
-RUN ./UpdateDocker.sh
+RUN sudo systemctl restart docker
+RUN sudo ./UpdateDocker.sh
