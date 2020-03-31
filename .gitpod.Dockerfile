@@ -26,6 +26,6 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y nodejs
 RUN sudo apt-get install -y npm
 RUN sudo echo "NodeJS setup Complete"
-RUN sudo cd ..
+RUN cd ..
 RUN echo $ls
 RUN echo $pwd
