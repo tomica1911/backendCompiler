@@ -11,3 +11,20 @@ USER gitpod
 
 #!/bin/sh
 
+#!/bin/sh
+
+###########################
+# Docker SETUP
+###########################
+RUN apt-get update
+RUN apt-get install -y docker.io
+
+RUN echo "Docker Setup complete"
+
+###########################
+# NodeJS setup
+###########################
+RUN apt-get update
+RUN apt-get install -y nodejs
+RUN apt-get install -y npm
+RUN echo "NodeJS setup Complete"
