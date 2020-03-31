@@ -30,10 +30,6 @@ RUN sudo echo "NodeJS setup Complete"
 ###########################
 # Start Docker
 ###########################
-RUN sudo chmod 777 /API/DockerTimeout.sh
-RUN sudo chmod 777 /API/Payload/script.sh
-RUN sudo chmod 777 /API/Payload/javaRunner.sh
-RUN sudo chmod 777 /Setup/UpdateDocker.sh
 
 RUN sudo systemctl restart docker
 RUN sudo ./UpdateDocker.sh
