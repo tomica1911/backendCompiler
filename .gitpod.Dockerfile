@@ -32,4 +32,4 @@ RUN sudo echo "NodeJS setup Complete"
 ###########################
 
 #RUN sudo systemctl restart docker
-RUN sudo ./UpdateDocker.sh
+RUN sudo ./Setup/UpdateDocker.sh
