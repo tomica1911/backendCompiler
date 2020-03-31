@@ -26,10 +26,3 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y nodejs
 RUN sudo apt-get install -y npm
 RUN sudo echo "NodeJS setup Complete"
-
-###########################
-# Start Docker
-###########################
-RUN echo $PWD
-#RUN sudo systemctl restart docker
-RUN sudo ./Setup/UpdateDocker.sh
