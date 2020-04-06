@@ -2,6 +2,8 @@ FROM gitpod/workspace-full-vnc
                     
 USER gitpod
 
+RUN sudo apt-get update
+
 RUN sudo apt-get install docker
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
